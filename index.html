@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>To-Do Angular</title>
+  </head>
+  <body ng-app="myMod" ng-controller="myController">
+
+    <input type="text" ng-model="item">
+    <button type="button" ng-click= "addItem(item)">Add</button>
+
+    <ul>
+      <li ng-repeat="item in things | filter: item">{{item}}</li>
+    </ul>
+
+<script src="angularfolder/angular.min.js" charset="utf-8"></script>
+<script src="angularfolder/angular-route.min.js" charset="utf-8"></script>
+<script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
